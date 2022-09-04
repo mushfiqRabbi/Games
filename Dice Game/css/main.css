@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(99, 101, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: default;
+}
+body > .container {
+  background-color: transparent;
+  height: 70%;
+  width: 60%;
+  display: flex;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+body > .container > .left,
+body > .container .right {
+  background-color: rgba(0, 0, 0, 0.1);
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+body > .container > .left > .top,
+body > .container > .left .bottom,
+body > .container .right > .top,
+body > .container .right .bottom {
+  flex: 1 1 50%;
+  display: flex;
+}
+body > .container > .left > .top,
+body > .container .right > .top {
+  padding-top: 15%;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+body > .container > .left > .top > .player-number,
+body > .container .right > .top > .player-number {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+body > .container > .left > .top > .score-total,
+body > .container .right > .top > .score-total {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+body > .container > .left > .bottom,
+body > .container .right > .bottom {
+  justify-content: center;
+  align-items: center;
+}
+body > .container > .left > .bottom > .bottom-box,
+body > .container .right > .bottom > .bottom-box {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 20px 40px;
+  border-radius: 7px;
+}
+body > .container > .left > .bottom > .bottom-box > .heading,
+body > .container > .left > .bottom > .bottom-box .score-current,
+body > .container .right > .bottom > .bottom-box > .heading,
+body > .container .right > .bottom > .bottom-box .score-current {
+  text-transform: uppercase;
+}
+body > .container > .left > .bottom > .bottom-box > .heading,
+body > .container .right > .bottom > .bottom-box > .heading {
+  font-size: 0.8rem;
+}
+body > .container > button,
+body > .container .dice {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body > .container .btn-reset {
+  top: 15%;
+}
+body > .container .dice {
+  top: 30%;
+  background-color: rgb(71, 73, 173);
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+body > .container .btn-roll {
+  top: 65%;
+}
+body > .container .btn-hold {
+  top: 77%;
+}
+body > .container > button {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: rgb(71, 73, 173);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.35);
+}
+body > .container > button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body > .container > button:active {
+  transform: translate(-50%, 2px);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=main.css.map */
