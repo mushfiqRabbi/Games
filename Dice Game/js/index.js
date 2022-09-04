@@ -85,6 +85,7 @@ rollBtn.addEventListener("click", () => {
       diceBox.innerText = diceRolled;
       currentP1.innerText = cP1;
     } else {
+      currentP1.innerText = 0;
       totalCalc(0);
       currentReset(0);
       p1 = false;
@@ -98,6 +99,7 @@ rollBtn.addEventListener("click", () => {
       diceBox.innerText = diceRolled;
       currentP2.innerText = cP2;
     } else {
+      currentP2.innerText = 0;
       totalCalc(1);
       currentReset(1);
       p1 = true;
