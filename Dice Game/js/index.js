@@ -23,12 +23,17 @@ const diceBox = document.querySelector(".dice");
 
 function playerSelector(player) {
   if (player) {
+    sideRight.classList.remove("highlight");
     sideLeft.style.backgroundColor = "rgb(255, 255, 255, 0.1)";
+    sideLeft.classList.add("highlight");
     sideRight.style.backgroundColor = "rgb(0, 0, 0, 0.1)";
   } else {
+    sideLeft.classList.remove("highlight");
     sideRight.style.backgroundColor = "rgb(255, 255, 255, 0.1)";
+    sideRight.classList.add("highlight");
     sideLeft.style.backgroundColor = "rgb(0, 0, 0, 0.1)";
   }
+  diceBox.innerText = 0;
 }
 
 function diceRoller() {

@@ -136,4 +136,9 @@ body > .container > button {
 body > .container > button:active {
   transform: translate(-50%, 2px);
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.7);
+}
+
+.highlight {
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
 }/*# sourceMappingURL=main.css.map */
